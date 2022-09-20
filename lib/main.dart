@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+import './dashboard.dart';
 
 void main() {
   runApp(MyApp());
@@ -67,18 +68,55 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class SecondScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Splash Screen'),
-      ),
-      body: const Center(
-          child: Text(
-        "Zijemu Landing Page",
-        textScaleFactor: 2,
-      )),
-    );
-  }
-}
+// //class SecondScreen extends StatelessWidget {
+//   int _selectedIndex = 0;
+//   static const TextStyle optionStyle =
+//       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+//   static const List<Widget> _widgetOptions = <Widget>[
+//     Text(
+//       'HOME PAGE',
+//       style: optionStyle,
+//     ),
+//     Text(
+//       'SEARCH',
+//       style: optionStyle,
+//     ),
+//     Text(
+//       'HOME PAGE',
+//       style: optionStyle,
+//     ),
+//     Text(
+//       'CART',
+//       style: optionStyle,
+//     ),
+//     Text(
+//       'SETTINGS',
+//       style: optionStyle,
+//     ),
+//   ];
+
+//   void _onItemTapped(int index) {
+//      setState(() {
+//       _selectedIndex = index;
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Splash Screen'),
+//       ),
+//       body: const Center(
+//           child: _widgetOptions.elementAt(_selectedIndex),
+//           ),
+//           bottomNavigationBar: BottomNavigationBar(
+//         items: const <BottomNavigationBarItem>[
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.home),
+//             title: Text('Home'),
+//           ),
+//         ]
+//     ),);
+//   }
+// }
